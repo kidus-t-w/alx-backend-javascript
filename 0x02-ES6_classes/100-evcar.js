@@ -1,22 +1,17 @@
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable class-methods-use-this */
+
 import Car from './10-car';
 
-export default class EVCar extends Car {
+export default class EvCar extends Car {
   constructor(brand, motor, color, range) {
     super(brand, motor, color);
-    this.range = range;
+    this._range = range;
   }
 
-  get range() {
-    return this._range;
-  }
-
-  set range(value) {
-    this._range = value;
-  }
+  /* implement getters and setter here */
 
   cloneCar() {
-    const Species = super.constructor[Symbol.species];
-
-    return new Species();
+    return new Car();
   }
 }

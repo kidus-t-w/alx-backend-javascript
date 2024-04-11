@@ -1,0 +1,6 @@
+package-lock.json
+node_modules
+.prettierrc
+*main*.js
+test.js
+redo

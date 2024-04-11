@@ -35,7 +35,6 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    this._amount = amount;
-    return this._amount * conversionRate;
+    return amount * conversionRate;
   }
 }

@@ -1,6 +1,6 @@
 export default function gorceriesList() {
   const l = new Map();
-  l.set('apples', 10);
+  l.set('Apples', 10);
   l.set('Tomatoes', 10);
   l.set('Pasta', 1);
   l.set('Rice', 1);

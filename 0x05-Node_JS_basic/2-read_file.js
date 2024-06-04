@@ -8,7 +8,7 @@ const fs = require('fs')
 const countStudents = (path) => {
     // const rowObjects = [];
     try{
-        fs.readFileSync(path, 'utf-8');
+        data = fs.readFileSync(path, 'utf-8');
     } catch (err) {
             console.log('Cannot load the database')
             return

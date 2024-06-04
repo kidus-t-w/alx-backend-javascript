@@ -1,10 +1,15 @@
-#!/usr/bin/env node
-
 const fs = require('fs')
+/**
+ * Reads a CSV file and counts the number of students in each field.
+ *
+ * @param {string} path - The path to the CSV file.
+ * @return {void} This function does not return anything.
+ */
 const countStudents = (path) => {
-    const rowObjects = [];
-    fs.readFile(path, 'utf-8', (err, data) => {
-        if (err){
+    // const rowObjects = [];
+    try{
+        fs.readFileSync(path, 'utf-8');
+    } catch (err) {
             console.log('Cannot load the database')
             return
         }
@@ -34,8 +39,6 @@ const countStudents = (path) => {
         console.log(`Number of students in CS: ${cs_count}. List: ${cs_names}`)
         console.log(`Number of students in SWE: ${swe_count}. List: ${swe_names}`)
         // console.log(rowObjects)
-
-    })
 }
 
 module.exports = countStudents

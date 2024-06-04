@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-
 const process = require('process');
 
 process.stdin.setEncoding('utf-8');
-process.stdout.write('Welcome to Holberton School, what is your name? \n What is your name ');
+process.stdout.write('Welcome to Holberton School, what is your name?\nWhat is your name ');
 process.stdin.on('readable', () => {
   const chunk = process.stdin.read();
   if (chunk !== null) {

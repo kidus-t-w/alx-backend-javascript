@@ -1,3 +1,4 @@
+
 /**
  * Writes the given message to the standard output.
  *
